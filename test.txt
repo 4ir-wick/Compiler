@@ -1,0 +1,30 @@
+a = 2
+PRINT "a :", a
+b = 3
+PRINT "b :", b
+FOR i = 0 TO 4
+GOSUB bPlusThree
+PRINT "b :", b
+NEXT i
+bPlusThree: b = b + 3
+RETURN
+DATA 3
+READ a
+PRINT a
+DATA 1.0, "egg"
+c = 0.0
+d = "not egg"
+READ c, d
+IF c = 1.0 THEN printC
+printC: PRINT "c :", c
+RETURN
+PRINT RANDOM()
+PRINT LEFT$("hello", 3)
+PRINT RIGHT$("hello", 3)
+PRINT MID$("hello", 1, 3)
+PRINT NUM$(1)
+PRINT NUM$(1.2)
+PRINT VAL("1")
+PRINT VAL%("1.2")
+INPUT "Set Value of A", a
+PRINT "Finished"
